@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: darkgray;
+}
+
+html{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+h1{
+    color: rgb(151, 194, 194);
+}
+
+/* base la liste*/
+nav>ul {
+    padding: 10px;
+    margin: 10px 20px 0 20px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+/* les elements filtres*/
+nav>ul>li {
+    text-align: center;
+    justify-content: center;
+    width: 100px;
+    font-family: var(--textfont);
+    font-size: 0.938em;
+    color: black;
+    background-color: whitesmoke;
+    border: solid 1px;
+    border-radius: 0px 50px 50px 0px;
+
+}
+
+/* les elements filtres au survol*/
+nav>ul>li:hover {
+    background-color: black;
+    border-radius: 0px 50px 50px 0px;
+    color: whitesmoke;
+
+}
+
+/* les elements liens au survol*/
+nav>ul>li>a:hover {
+    color: whitesmoke;
+}
+
+/* les elements liens*/
+nav>ul>li>a {
+    /* padding: 5px;  */
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    font-family: var(--textfont);
+    /* border : 2px solid red;  */
+    position: relative;
+    /* top : 10%; */
+}
+
+@media screen and (max-width: 768px) {
+
+    /* .filtre-audrey>ul{ 
+        flex-wrap: wrap; 
+        gap: 3%;
+    } */
+    .carousel {
+        display: flex;
+        list-style: none;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+    }
+
+    .carousel li {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel li:last-of-type {
+        margin-right: 0;
+    }
+
+}
+/*----
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1E2337;
+}
