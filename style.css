@@ -28,12 +28,11 @@ h1{
     align-items: center;
     background-color: rgb(19, 57, 64);
 }
+
+.banniere-titre{
+    margin-bottom: 1rem;
+}
 /* ------ Jeu------ */
-/* #jeu{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-} */
 
 #btn-cyan{
     background-color: rgb(132, 224, 218);
@@ -88,3 +87,33 @@ h1{
     100% {left:0px; top:0px;}
 }
 
+
+/* ---- Bannière cookies ---- */
+.cookies{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;/*nécessaire de préciser une width si position:fixed*/
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;/*positionner les DIV enfants*/
+    align-items: center;/*centrer verticalement*/
+    padding: 3rem;
+    opacity: 1; /* modification de cette valeur en Javascript*/
+    transition: 0.7s;
+}
+.cookies-btn{
+    display: flex;
+}
+.btn{
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+.btn.btn-success{
+    background-color: #1E2337;
+}
+.btn.btn-deny{
+    background-color: rgb(84, 84, 84);
+}

@@ -41,3 +41,18 @@ replay.addEventListener('click', function(){
     console.log('cliqué'); 
     location.reload();
 });
+
+// Bannière cookies
+// Je sélectionne et je stocke
+const cookies = document.querySelector(".cookies");
+// console.log(cookies);
+const btnCookies = document.querySelector(".btn-success");
+// console.log(btnCookies);
+
+//Je soumet une action btnCookies
+btnCookies.addEventListener('click', function(){
+    console.log("bouton cliqué");
+    cookies.style.opacity = "0";
+ });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+
+
